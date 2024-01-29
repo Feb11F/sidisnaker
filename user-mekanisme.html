@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinas Tenaga Kerja | Kabupaten Jombang</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <style>
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+  
+    .html{
+        font-size: 62.5%;
+    }
+  
+    .navbar input[type="checkbox"],
+    .navbar .hamburger-lines{
+        display: none;
+    }
+  
+    .container{
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+    }
+  
+    .navbar{
+        box-shadow: 0px 5px 10px 0px #aaa;
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        color: #000;
+        opacity: 0.85;
+        z-index: 100;
+    }
+  
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+    }
+  
+    .menu-items{
+        order: 2;
+        display: flex;
+    }
+    .logo{
+        order: 1;
+        font-size: 1.5rem;
+    }
+  
+    .menu-items li{
+        list-style: none;
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+    }
+  
+    .navbar a{
+        color: #444;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+  
+    .navbar a:hover{
+        color: #117964;
+    }
+  
+    @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .navbar-container {
+    height: auto;
+  }
+  .navbar .menu-items li a {
+    font-size: 9px;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Menjaga agar item tetap dalam satu baris */
+    justify-content: center;
+    background-color: #fff;
+    opacity: 0.95;
+    transition: all 0.3s;
+    z-index: 100;
+    position: static;
+    margin-bottom: 0px;
+  }
+  
+  .navbar input[type="checkbox"] {
+    display: none;
+  }
+
+  .menu-items li {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    flex: 1 0 auto; /* Lebar yang tetap, tidak melebar */
+    display: flex;
+    justify-content: right;
+  }
+  
+  .menu-items li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-items li a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 0px;
+  }
+  
+  .menu-items li a:hover {
+    color: #117964;
+  }
+  
+  .navbar .logo {
+    font-size: 10px;
+    margin: 10px auto;
+    margin-top:0px ;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .navbar .logo img {
+    height: 0px; /* Atur tinggi logo sesuai keinginan */
+  }
+}
+  
+    @media (max-width: 500px){
+        .navbar-container input[type="checkbox"]:checked ~ .logo{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body style="background-color: #F1F6F9;">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container container">
+        <ul class="menu-items">
+            <li><a href="index.html">Menu Utama</a></li>
+        </ul>
+        <h1 class="logo"><img src="./login.png" style="height: 40px; padding-bottom: 0px; margin-right: 10px;"><b>Dinas Tenaga Kerja |</b> Kabupaten Jombang</h1>
+    </div>
+</nav>
+  
+  <!-- /.navbar -->
+
+  
+
+    <!-- Main content -->
+    <section class="content">
+      <h2 style="padding-top: 90px; padding-left: 5px; font-size: 18pt;"> Mekanisme Pengaduan Perselisihan Hubungan Industrial (PHI)</h2>
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <img style="height:500px; margin-top: 20px; margin-left: 200px; margin-right: 60px;" src="mekanisme-phi.png">
+        </div>
+        <div style="margin-top: 10px; margin-left: 200px;">
+          <a href="./mekanisme-phi.png" download="downloaded-mekanisme-phi.png"><button class="btn btn-secondary"> Unduh Gambar 
+            
+          </button></a>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 40px;">
+          <div class="card-header" style="background-color: #D8D9DA; padding-top: 5px; padding-bottom: 5px;">
+            <h5><b> Persyaratan </b></h5>
+          </div>
+          <div class="card-body" style="padding-top: 10px; padding-bottom: 10px;">
+            <h5 class="card-title"> - Bukti Hasil Pertemuan Bipartit</h5><br>
+            <h5 class="card-title"> - Surat PPHK (Slip Gaji)</h5><br>
+            <h5 class="card-title"> - Kartu Pekerja </h5><br>
+            <h5 class="card-title"> - Kontrak Kerja </h5><br>
+            <h5 class="card-title"> - Peraturan Perusahaan </h5><br>
+            <h5 class="card-title"> - Dokumentasi Permasalahan (Bila Ada)</h5>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-header" style="background-color: #D8D9DA; padding-top: 5px; padding-bottom: 5px;">
+            <h5><b> Penjelasan </b></h5>
+          </div>
+          <div class="card-body" style="padding-top: 10px; padding-bottom: 10px;">
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>Bipartit</b></h5><br>
+                <a>Kesepakatan atau hubungan antara dua pihak yang terlibat dalam urusan ketenagakerjaan, yaitu pihak pekerja/buruh dan pihak pengusaha/pemberi kerja.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>Konsiliasi</b></h5><br>
+                <a>Metode alternatif penyelesaian sengketa di luar jalur peradilan, di mana pihak-pihak yang bersengketa berupaya untuk mencapai kesepakatan dengan bantuan pihak ketiga yang netral dan terlatih dalam memfasilitasi komunikasi dan negosiasi antara pihak-pihak tersebut.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>PK (Perjanjian Konsiliasi)</b></h5><br>
+                <a> Kesepakatan atau perjanjian antara pihak-pihak yang terlibat dalam sengketa ketenagakerjaan untuk mencoba menyelesaikan sengketa tersebut melalui proses konsiliasi.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>PPHK (Perselisihan Pemutusan Hubungan Kerja)</b></h5><br>
+                <a>Merujuk pada proses di mana seorang pekerja atau karyawan diakhiri hubungan kerjanya dengan suatu perusahaan atau pengusaha.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>PASP (Perjanjian Antar Serikat Pekerja)</b></h5><br>
+                <a>Perjanjian yang dibuat antara dua atau lebih serikat pekerja atau serikat buruh yang memiliki tujuan untuk bekerja sama dalam isu-isu tertentu yang berkaitan dengan hak-hak pekerja, kondisi kerja, atau tujuan lain yang relevan.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>SB (Serikat Buruh)</b></h5><br>
+                <a>Organisasi yang mewakili dan memperjuangkan hak-hak serta kepentingan pekerja.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>Abitrase</b></h5><br>
+                <a>Suatu bentuk alternatif penyelesaian sengketa di mana pihak-pihak yang bersengketa sepakat untuk membiarkan pihak netral yang disebut arbiter atau panel arbitrase membuat keputusan yang mengikat untuk menyelesaikan sengketa tersebut.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>Arbiter</b></h5><br>
+                <a>Individu atau pihak yang ditunjuk atau dipilih untuk mengambil keputusan dalam sebuah sengketa atau konflik antara dua pihak.</a>
+              </li>
+            </ul>
+            <ul style="margin-left: 20px;">
+              <li><h5 class="card-title"><b>Panel Arbitrase</b></h5><br>
+                <a>Kelompok dari satu atau lebih arbiter yang ditunjuk untuk memutuskan sengketa antara pihak-pihak yang terlibat dalam proses arbitrase.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-header" style="background-color: #D8D9DA; padding-top: 5px; padding-bottom: 5px;">
+            <h5><b> Produk Pelayanan </b></h5>
+          </div>
+          <div class="card-body" style="padding-top: 10px; padding-bottom: 10px;">
+            <h5 class="card-title">Penanganan Penyelesaian Perselisihan Hubungan Industrial</h5>
+          </div>
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-7 connectedSortable">
+          
+            </div>
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
